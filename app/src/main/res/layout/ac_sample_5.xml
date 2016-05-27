@@ -6,7 +6,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.dd.CircularProgressButton
+    <com.swu.shen_pc.mylibrary.CircularProgressButton
             android:id="@+id/circularButton1"
             android:layout_width="196dp"
             android:layout_height="64dp"
@@ -21,7 +21,7 @@
             app:cpb_selectorComplete="@drawable/complete_state_selector"
             app:cpb_selectorError="@drawable/error_state_selector"/>
 
-    <com.dd.CircularProgressButton
+    <com.swu.shen_pc.mylibrary.CircularProgressButton
             android:id="@+id/circularButton2"
             android:layout_width="196dp"
             android:layout_height="64dp"

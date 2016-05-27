@@ -37,7 +37,9 @@ public class CircularProgressButton extends Button {
 
     private StateManager mStateManager;
     private State mState;
+    //开始转动之前的文字
     private String mIdleText;
+    //转动之后的文字
     private String mCompleteText;
     private String mErrorText;
     private String mProgressText;
@@ -45,10 +47,13 @@ public class CircularProgressButton extends Button {
     private int mColorProgress;
     private int mColorIndicator;
     private int mColorIndicatorBackground;
+    //完成之后的图片资源id
     private int mIconComplete;
+    //完成之后的错误图片资源id
     private int mIconError;
     private int mStrokeWidth;
     private int mPaddingProgress;
+    //按钮的圆角
     private float mCornerRadius;
     private boolean mIndeterminateProgressMode;
     private boolean mConfigurationChanged;
@@ -57,6 +62,7 @@ public class CircularProgressButton extends Button {
         PROGRESS, IDLE, COMPLETE, ERROR
     }
 
+    //最大刻度值
     private int mMaxProgress;
     private int mProgress;
 
@@ -177,6 +183,12 @@ public class CircularProgressButton extends Button {
         }
     }
 
+    /**
+     * 获取属性值
+     *
+     * @param context
+     * @param attributeSet
+     */
     private void initAttributes(Context context, AttributeSet attributeSet) {
         TypedArray attr = getTypedArray(context, attributeSet, R.styleable.CircularProgressButton);
         if (attr == null) {

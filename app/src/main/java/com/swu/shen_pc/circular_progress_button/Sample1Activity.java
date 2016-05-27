@@ -43,19 +43,19 @@ public class Sample1Activity extends Activity {
             }
         });
 
-        final CircularProgressButton circularButton2 = (CircularProgressButton) findViewById(R.id.circularButton2);
-        circularButton2.setIndeterminateProgressMode(true);
-        circularButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (circularButton2.getProgress() == 0) {
-                    circularButton2.setProgress(50);
-                } else if (circularButton2.getProgress() == -1) {
-                    circularButton2.setProgress(0);
-                } else {
-                    circularButton2.setProgress(-1);
-                }
-            }
-        });
+//        final CircularProgressButton circularButton2 = (CircularProgressButton) findViewById(R.id.circularButton2);
+//        circularButton2.setIndeterminateProgressMode(true);
+//        circularButton2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (circularButton2.getProgress() == 0) {
+//                    circularButton2.setProgress(50);
+//                } else if (circularButton2.getProgress() == -1) {
+//                    circularButton2.setProgress(0);
+//                } else {
+//                    circularButton2.setProgress(-1);
+//                }
+//            }
+//        });
     }
 }
